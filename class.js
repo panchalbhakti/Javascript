@@ -434,7 +434,7 @@ class Pencil {
 }
 
 const pencil1 = new Pencil("Marker", "Blue", "20");
-console.log(pencil1)
+console.log(pencil1);
 pencil1.showPrice();
 
 

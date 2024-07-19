@@ -20,7 +20,7 @@ fetch(URL2)
   .then(response => {
     return response.json();
   })
-  .then(json => console.log(json))
+  .then(json => console.log(json));
 
 //Ex:3
 const URL3 = "https://cat-fact.herokuapp.com/facts";
@@ -35,7 +35,7 @@ const getFacts = async () => {
   factPara.innerText = json[1].text;
 }
 
-btn.addEventListener("click", getFacts)
+btn.addEventListener("click", getFacts);
 
 
 //Ex:4
@@ -59,7 +59,7 @@ fetch(URL5)
   .then(response => {
     return response.json();
   })
-  .then(json => console.log(json))
+  .then(json => console.log(json));
 
 
 //Ex:6
