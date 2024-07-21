@@ -233,4 +233,24 @@ console.log(tile3);
 
 
 //Ex:23
+const cols = [["sky blue", "navy blue"], "red", "black"];
+const [color1, color2, color3] = cols;
 
+console.log(color1);
+console.log(color2);
+
+
+//Ex:24
+const car = {
+    brand: "Toyota",
+    model: "Corolla",
+    specs: ["Automatic", "Hybrid"]
+};
+
+const { brand, model, specs: [transmission, type] } = car;
+
+console.log('Brand:', brand, 'Model:', model);
+console.log('Transmission:', transmission, 'Type:', type);
+
+
+//Ex:25
