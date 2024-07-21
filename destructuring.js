@@ -254,3 +254,73 @@ console.log('Transmission:', transmission, 'Type:', type);
 
 
 //Ex:25
+const items = ["Pen", "Pencil", "Eraser", "Sharpener"];
+const [item1, item2, ...remainingItems] = items;
+
+console.log(item1); 
+console.log(item2);
+console.log(remainingItems); 
+
+
+//Ex:26
+const users = [
+    { name: "Sara", age: 28 },
+    { name: "Tom", age: 34 },
+    { name: "Anna", age: 22 }
+];
+
+const [user1, user2, user3] = users;
+const { name: n1, age: a1 } = user1;
+const { name: n2, age: a2 } = user2;
+const { name: n3, age: a3 } = user3;
+
+console.log('User 1:', n1, 'Age:', a1);
+console.log('User 2:', n2, 'Age:', a2);
+console.log('User 3:', n3, 'Age:', a3);
+
+
+//Ex:27
+const point = [12, 34, [56, 78]];
+const [e, d, [z, w]] = point;
+
+console.log('X:', e);
+console.log('Y:', d);
+console.log('Z:', z);
+console.log('W:', w);
+
+
+//Ex:28
+const responses = [
+    { status: 200, message: "OK" },
+    { status: 404, message: "Not Found" },
+    { status: 500, message: "Internal Server Error" }
+];
+
+const [response1, response2, response3] = responses;
+const { status: status1, message: message1 } = response1;
+const { status: status2, message: message2 } = response2;
+const { status: status3, message: message3 } = response3;
+
+console.log('Response 1:', status1, '-', message1);
+console.log('Response 2:', status2, '-', message2);
+console.log('Response 3:', status3, '-', message3);
+
+
+//Ex: 29
+const setting = {
+    volume: 10,
+    brightness: 80,
+    mode: "dark"
+};
+
+const { volume, brightness, mode} = setting;
+
+console.log('Volume:', volume, 'Brightness:', brightness, 'Theme:', mode);
+
+
+//Ex: 30
+const score  = [89, 76, 91, 85];
+const [math, science, english, history] = score;
+
+console.log('Math:', math, 'Science:', science, 'English:', english, 'History:', history);
+
