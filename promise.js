@@ -419,3 +419,216 @@ isArrayNotEmpty([1, 2, 3])
  .catch((error) => {
     console.log(error);
  });
+
+
+//Ex:21
+function uploadFile(fileSize) {
+    return new Promise((resolve, reject) => {
+        if(fileSize > 300){
+            reject("You cannot upload the file");
+        }
+        else{
+            resolve("you can upload the file");
+        }
+    });
+}
+
+uploadFile(350)
+    .then((value) => {
+    console.log(value);
+    })
+    .then((error) => {
+    console.log(error);
+    });
+
+
+//Ex: 22
+function checkNetworkConnection(status) {
+    return new Promise((resolve, reject) => {
+        if (status === "online") {
+            resolve("You are connected to the network");
+        } else {
+            reject("You are offline");
+        }
+    });
+}
+
+checkNetworkConnection("online")
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+//Ex:23
+function checkApiResponse(status) {
+    return new Promise((resolve, reject) => {
+        if (status === 200) {
+            resolve("API call was successful");
+        } else {
+            reject("API call failed");
+        }
+    });
+}
+
+checkApiResponse(200)
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+//Ex:24
+function connectToDatabase(isConnected) {
+    return new Promise((resolve, reject) => {
+        if (isConnected) {
+            resolve("Connected to the database");
+        } else {
+            reject("Failed to connect to the database");
+        }
+    });
+}
+
+connectToDatabase(true)
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+//Ex: 25
+function getWeatherForecast(forecast) {
+    return new Promise((resolve, reject) => {
+        if (forecast === "sunny") {
+            resolve("The weather is sunny");
+        } else {
+            reject("The weather is not sunny");
+        }
+    });
+}
+
+getWeatherForecast("sunny")
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+//Ex: 26
+function processPayment(isSuccessful) {
+    return new Promise((resolve, reject) => {
+        if (isSuccessful) {
+            resolve("Payment processed successfully");
+        } else {
+            reject("Payment failed");
+        }
+    });
+}
+
+processPayment(true)
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+//Ex: 27
+function checkStockAvailability(stock) {
+    return new Promise((resolve, reject) => {
+        if (stock > 0) {
+            resolve("Stock is available");
+        } else {
+            reject("Out of stock");
+        }
+    });
+}
+
+checkStockAvailability(10)
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+
+//Ex: 28
+function checkPasswordStrength(password) {
+    return new Promise((resolve, reject) => {
+        if (password.length >= 8) {
+            resolve("Password is strong");
+        } else {
+            reject("Password is weak");
+        }
+    });
+}
+
+checkPasswordStrength("abcdefghijklmnop")
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+//Ex: 29
+function isTaskCompleted(isCompleted) {
+    return new Promise((resolve, reject) => {
+        if (isCompleted) {
+            resolve("Task completed successfully");
+        } else {
+            reject("Task not completed");
+        }
+    });
+}
+
+isTaskCompleted(true)
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+//Ex: 30
+function checkIfAdult(age) {
+    return new Promise((resolve, reject) => {
+        if (age >= 18) {
+            resolve("The user is an adult");
+        } else {
+            reject("The user is not an adult");
+        }
+    });
+}
+
+checkIfAdult(16)
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+checkIfAdult(20)
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+
